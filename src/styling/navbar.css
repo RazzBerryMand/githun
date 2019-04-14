@@ -1,0 +1,41 @@
+.Navbar {
+  text-align: center;
+  font-family: 'Cookie', cursive;
+  background-color: #e33c3c;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.Navbar a {
+  color: #fefefe;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: color 0.25s ease-in-out;
+}
+
+.Navbar a::before {
+  content: '';
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: #fefefe;
+  transform: translateX(-50%);
+  transition: width 0.25s ease-in-out;
+}
+
+.Navbar a:hover::before {
+  width: calc(100% - 28px);
+}
+
+@media screen and (min-width: 640px) {
+  .Navbar a {
+    padding: 14px 25px;
+  }
+}

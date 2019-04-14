@@ -1,0 +1,135 @@
+.SubHeader {
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Cookie', cursive;
+  font-size: 30px;
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.TextContainer {
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.TextContainer a {
+  color: #000;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.TextContainer .DeviconsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.TextContainer .DeviconsWrapper .IconsContainer {
+  width: 90%;
+  padding: 20px;
+  background-color: #ff9248;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  opacity: 0.8;
+}
+.TextContainer .DeviconsWrapper .IconsContainer i {
+  font-size: 40px;
+  padding: 10px;
+}
+
+.TextContainer .ErrorPageImage {
+  text-align: center;
+}
+
+.TextContainer .ErrorPageImage img {
+  align-items: center;
+  width: 70%;
+}
+
+.TextContainer .BlogLinkWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.TextContainer .BlogLinkWrapper .BlogLink {
+  width: 90%;
+  padding: 20px;
+  background-color: #ff9248;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  opacity: 0.8;
+}
+
+.TextContainer .PortfolioWrapper .AppContainer {
+  padding: 20px;
+  background-color: #ff9248;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  opacity: 0.8;
+}
+
+.TextContainer .PortfolioWrapper .AppContainer img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.TextContainer .PortfolioWrapper .AppContainer p {
+  margin-top: 0;
+}
+
+.TextContainer .dev-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 400px) {
+  .TextContainer .github-link {
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .Home,
+  .Portfolio,
+  .Blog,
+  .Contact,
+  .SingleArticle,
+  .Technical {
+    max-width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .TextContainer .PortfolioWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .TextContainer .PortfolioWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
